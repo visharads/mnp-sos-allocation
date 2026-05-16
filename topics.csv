@@ -1,262 +1,207 @@
-Summer of Science Topics 2025,
-Mathematics,
-Code,Topic
-M01,Abstract Algebra
-M02,Algebraic Combinatorics
-M03,Algebraic Geometry
-M04,Algebraic Topology
-M05,Analysis of PDEs
-M06,Analytic Combinatorics
-M07,Calculus
-M08,Calculus of Variations
-M09,Category Theory
-M10,Coding Theory
-M11,Combinatorics
-M12,Commutative Algebra
-M13,Complex Analysis
-M14,Convex Optimisation
-M15,Convex and Combinatorial Optimisation
-M16 ,Discrete-Time Markov Chains
-M17,Differential Equations
-M18,Differential Geometry
-M19,Differential Topology
-M20,Discrete Mathematics
-M21,Elementary Harmonic analysis
-M22,Elliptic curves
-M23,Finite geometry
-M24,First order logic
-M25,Fourier Analysis
-M26,Functional analysis
-M27,Group Theory
-M28,Hopf algebras
-M29,Lie Algebra
-M30,Linear Algebra
-M31,Markov Decision Processes
-M32,Measure Theory
-M33,Non Linear Dynamical Systems
-M34,Non-commutative algebra
-M35,Number Theory
-M36,Optimization
-M37,Optimization on Matrix Manifolds
-M38,Partial Differential Equations
-M39,Probabilistic Method
-M40,Probability and Statistics
-M41,Probability theory and Concentration
-M42,Representation theory
-M43,Ring Theory
-M44,Set theory
-M45,Stochastic Approximation Theory
-M46,Stochastic Processes
-M47,Stochastic differential equations
-M48,Topology
-Physics,
-Code,Topic
-P01,Active Matter Physics
-P02,Advanced Quantum Field Theory
-P03,Analytical Mechanics
-P04,Atomic and Molecular Physics
-P05,Classical Mechanics
-P06,Computational Physics
-P07,Condensed Matter Physics
-P08,Cosmology
-P09,Device Physics
-P10,Differential Geometry for Physics
-P11,Electrodynamics
-P12,Elementary particle physics
-P13,Experimental Quantum Computing Systems
-P14,Galactic Dynamics
-P15,Information and Quantum Technologies
-P16,Mathematical physics
-P17,Photonics and Quantum Optics
-P18,Quantum Computing
-P19,Quantum Field Theory
-P20,Quantum Mechanics
-P21,Quantum Probability
-P22,Quantum gravity
-P23,Semi-conductors and their Applications
-P24,Soft Condensed Matter and Complex Fluids
-P25,Solid State Physics
-P26,Special and General Relativity
-P27,Statistical Mechanics and Thermal Physics
-P28,Holography (QFT Prerequisite)
-Engineering,
-Code,Topic
-E01,Aerodynamics and Fluid Mechanics
-E02,Analog Electronics
-E03,Antenna design
-E04,Assembly language microprocessor design
-E05,Combustion Engines
-E06,Computational Methods in Engineering
-E07,Computational Fluid Dynamics
-E08,Control Systems
-E09,Differential geometry and it's application on control
-E10,Driverless vehicles
-E11,Electric Vehicles
-E12,Electronic Devices
-E13,Electronic device physics and fabrication
-E14,Electronics and Instrumentation
-E15,Embedded Systems
-E16,Finite Element Analysis
-E17,Information Theory
-E18,Machine Design
-E19,Mechanics and Materials
-E20,Multi agent systems
-E21,Nanotechnology
-E22,Networked dynamical systems
-E23,Non-Linear Dynamics
-E24,Numerical Optimal Control
-E25,Optimization on Smooth Manifolds
-E26,Renewable Energy
-E27,Robotics
-E28,Rocket Propulsion
-E29,Rotary Wing Aerodynamics
-E30,Satellite Systems Engineering
-E31,Signal Processing
-E32,Space Technology
-E33,Spaceflight Mechanics
-E34,Structural Analysis for Aircraft Structures
-E35,Transportation Engineering
-"Astronomy and Astrophysics, and Planetary Science",
-Code,Topic
-A01,Asteroseismology
-A02,Astronomical Instrumentation
-A03,Celestial Mechanics
-A04,Cosmology and Dark matter
-A05,Earth and Planetary Science
-A06,Exoplanets
-A07,General Astronomy
-A08,High Energy Astrophysics
-A09,Life and death of star relating to history and studies on it.
-A10,Observational Astronomy
-A11,Solar Physics
-A12,Stellar Astrophysics
-A13,X-ray/Optical/Radio Astronomy
-"Biology, Biotechnology and Biophysics",
-Code,Topic
-B01,Bacterial Virulence and therapeutic Measures
-B02,Cancer Biology
-B03,Computational Biology
-B04,Evolutionary Biology
-B05,Generative Models & Capstone
-B06,Genetics and Genetic engineering
-B07,Genomics & Imaging
-B08,Immunology and Vaccinology
-B09,Machine Learning in Biology
-B10,Mathematical Biology
-B11,Medicine
-B12,Molecular Cell Biology
-B13,Molecules & Cheminformatics
-B14,Neuroscience
-B15,Protein Structures
-Computer Science,
-Code,Topic
-CS01,Artifical Intelligence and Machine Learning
-CS02,Advanced Algorithms for Competitive Programming
-CS03,Algorithms and Matroid Polytopes
-CS04,Algorithms for Multi Armed Bandits
-CS05,Big Data
-CS06,Blockchains
-CS07,Causal Inference in Machine Learning
-CS08,Compilers
-CS09,Computational Learning Theory
-CS10,Computer Architecture
-CS11,Computer Graphics
-CS12,Computer Networks
-CS13,Computer Vision
-CS14,Cryptography
-CS15,Data Science and Analytics
-CS16,Data Structures and Algoritms
-CS17,Database Management System
-CS18,Digital Logics
-CS19,Discrete structures
-CS20,Extremal Combinatorics
-CS21,Generative and Agentic AI
-CS22,Geometric and Approximation Algorithms
-CS23,Graph Machine Learning
-CS24,Graph theory
-CS25,High dimensional learning and inference
-CS26,Image Processing
-CS27,Large Language Models
-CS28,Formal Logic
-CS29,Markov Chains
-CS30,Markov Decision Processes and their Applications in AI
-CS31,Mathematical forms of the Machine Learning models
-CS32,Natural Language Processing
-CS33,Neural Networks
-CS34,Operating Systems
-CS35,Randomised Algorithms
-CS36,Reinforcement Learning
-CS37,SQL
-CS38,Statistical Physics of Computation
-CS39,Theory of Computation
-CS40,Web development
-CS41,Zero-Knowledge Proofs
-CS42,Compressive sensing
-"Applied Science, Humanities, and Miscellaneous",
-Code ,Topic
-H01,Algorithmic Trading
-H02,Alternative Investments
-H03,Behavioral Economics
-H04,Case Frameworks
-H05,Consulting Tools
-H06,Consumer theory and Behavioral Analysis
-H07,Corporate Finance
-H08,Criminology
-H09,Economics
-H10,Financial Mathematics
-H11,Financial Modelling
-H12,Game Theory
-H13 ,Impact of Meditation
-H14,Investment Banking
-H15,Mathematics of Derivative Pricing
-H16,Music Theory
-H17,Numerical Analysis
-H18,Option Trading Strategies
-H19,Philosophy
-H20,Private Equity
-H21,Product Frameworks
-H22,Psychology
-H23,Quantitative Portfolio Management
-H24,Risk and Psychology in Trading
-H25,Social Psychology
-H26,Sociology
-H27,Stock Market Analysis
-H28,Tech Policy
-H29,Valuation of startups
-H30,Quantitative Models in Supply Chain
-H31,Combinatorial Game theory
-Energy Science,
-Code,Topic
-ES01,Battery Technology
-ES02,Climate Change and Climate Science
-ES03,Corporate Sustainabiility
-ES04,Energy Economics and Policy
-ES05,EVs and Technology
-ES06,Energy Markets & Decarbonization of Industries
-ES07,Energy system modelling
-ES08,Hydrogen storage and its utility
-ES09,Nuclear reactors
-ES10,Solar Photovoltaics
-ES11,Sustainability and engineering
-ES12,Tandem Solar Cells
-ES13,Wireless Charging Technology
-Chemistry and Material Science,
-Code,Topic
-C01,2D Materials and properties
-C02,Biomolecules
-C03,Catalysis
-C04,Chemical Fuel Cells
-C05,Chemical Thermodynamics
-C06,Computational Chemistry
-C07,Coordination Chemistry
-C08,Electrochemistry
-C09,Environmental chemistry and Green materials
-C10,ML/AI in Chemistry
-C11,ML/AI in Material Science
-C12,Materials for Electronics and Photonics
-C13,Nanomaterials
-C14,Organic Synthesis
-C15,Quantum Chemistry
-C16,Silicon processing
-C17,Spectroscopic Analysis and Determination of Compounds
-C18,Stereochemistry
+A01,Celestial Mechanics,,,
+A02,Cosmology and Dark matter,,,
+A03,Earth and Planetary Science,,,
+A04,General Astronomy,,,
+A05,Observational Astronomy,,,
+B01,Bio Instrumentation,,,
+B02,Cancer Biology,,,
+B03,Computational Biology,,,
+B04,Ecology,,,
+B05,Evolutionary Biology,,,
+B06,Genetics and Genetic engineering,,,
+B07,Immunology,,,
+B08,Immunology and Vaccinology,,,
+B09,Machine Learning in Biology,,,
+B10,Mathematical Biology,,,
+B11,Medicine,,,
+B12,Methods in Polymer Physics for Biology ,,,
+B13,Molecular Biology,,,
+B14,Molecular Cell Biology,,,
+B15,Neuroscience,,,
+C01,Catalysis,,,
+C02,Chemical Engineering,,,
+C03,Coordination Chemistry,,,
+C04,Electrochemistry,,,
+C05,Functional Ceramics,,,
+C06,Material Characterization Techniques,,,
+C07,Materials for Ultra high temperatures,,,
+C08,ML/AI in Material Science,,,
+C09,Organic Synthesis,,,
+C10,Quantum Chemistry,,,
+C11,Silicon processing,,,
+C12,Spectroscopic Analysis and Determination of Compounds,,,
+CS01,Algorithms for Competitive Programming,,,
+CS02,Algorithms and Matroid Polytopes,,,
+CS03,Artifical Intelligence and Machine Learning,,,
+CS04,Big Data,,,
+CS05,Blockchains,,,
+CS06,Computational Learning Theory,,,
+CS07,Computer Architecture,,,
+CS08,Computer Networks,,,
+CS09,Computer Vision,,,
+CS10,Concurrent programs and memory models,,,
+CS11,Cryptography,,,
+CS12,Data Science,,,
+CS13,Data Structures and Algoritms,,,
+CS14,Database Management System,,,
+CS15,Digital Logics,,,
+CS16,Discrete structures,,,
+CS17,Extremal Combinatorics,,,
+CS18,Formal Logic,,,
+CS19,Games on Graphs,,,
+CS20,Generative and Agentic AI,,,
+CS21,Graph Machine Learning,,,
+CS22,Graph theory,,,
+CS23,Image Processing,,,
+CS24,Information Retrieval,,,
+CS25,Large Language Models,,,
+CS26,Markov Chains,,,
+CS27,Natural Language Processing,,,
+CS28,Neural Networks,,,
+CS29,Operating Systems,,,
+CS30,Post-Training Methods,,,
+CS31,Randomised Algorithms,,,
+CS32,Reinforcement Learning,,,
+CS33,Spectral Graph Theory,,,
+CS34,Statistical Learning Theory,,,
+CS35,Supply Chain Analytics,,,
+CS36,Theory of Computation,,,
+CS37,Zero-Knowledge Proofs,,,
+CS38,Multimodal Machine Learning,,,
+CS39,Machine Learning for Telecom,,,
+CS40,Reinforcement Learning for LLMs,,,
+CS41,Medical Image Segmentation,,,
+CS42,Image Generation,,,
+CS43,Online Learning,,,
+CS44,Data Science and Analytics,,,
+E01,Aerodynamics and Fluid Mechanics,,,
+E02,Analog Electronics,,,
+E03,Assembly language microprocessor design,,,
+E04,Automobile Design,,,
+E05,Computational Methods in Engineering,,,
+E06,Construction Materials,,,
+E07,Control Systems,,,
+E08,Driverless vehicles,,,
+E09,Electronics and Instrumentation,,,
+E10,Embedded Systems,,,
+E11,Environmental Engineering,,,
+E12,Finite Element Analysis,,,
+E13,Graph Theoretic Methods in Multiagent Networks,,,
+E14,Hardware Description Languages,,,
+E15,Hypersonics,,,
+E16,Information Theory,,,
+E17,Low Speed aerodynamics,,,
+E18,Machine Design,,,
+E19,Mechanics and Materials,,,
+E20,PCB Design,,,
+E21,Robotics,,,
+E22,Signal Processing,,,
+E23,Soil Mechanics,,,
+E24,Transportation Engineering,,,
+E25,Semiconductor Fabrication,,,
+E26,Control Theory,,,
+E27,Digital Electronics,,,
+ES01,Battery Technology,,,
+ES02,Carbon accounting & ESG,,, 
+ES03,Climate Change and Climate Science,,,
+ES04,Corporate Sustainabiility,,,
+ES05,Energy Markets & Decarbonization of Industries,,,
+ES06,EVs and Technology,,,
+ES07,Fuel Cells,,,
+ES08,Solar Photovoltaics,,,
+ES09,Sustainability and engineering,,,
+ES10,Sustainability Practices,,,
+H01,Algorithmic Trading,,,
+H02,Alternative Investments,,,
+H03,Behavioral Economics,,,
+H04,Case Frameworks for Consulting,,,
+H05,Combinatorial Game theory,,,
+H06,Consumer theory and Behavioral Analysis,,,
+H07,Corporate Finance,,,
+H08,Criminology,,,
+H09,Density Functional Theory (DFT) in particular,,,
+H10,Economics,,,
+H11,Econophysics,,,
+H12,Finance (Equity),,,
+H13,Financial Mathematics,,,
+H14,Financial Modelling,,,
+H15,Financial Quantitative Analysis & Investment Strategy,,,
+H16,Game Theory,,,
+H17,Impact of Meditation,,,
+H18,Management,,,
+H19,Market Microstructure,,,
+H20,Mathematics of Derivative Pricing,,,
+H21,Multi-Echelon Optimization,,,
+H22,Music Theory,,,
+H23,Numerical Analysis,,,
+H24,Option Trading Strategies,,,
+H25,Philosophy,,,
+H26,Policy Studies,,,
+H27,Probability and Random Processes,,,
+H28,Quantitative Portfolio Management,,,
+H29,Risk and Psychology in Trading,,,
+H30,Social Psychology,,,
+H31,Stock Market Analysis,,,
+H32,Technical Analysis in Financial Markets,,,
+H33,Group Testing and Error Correcting Codes,,,
+H34,Applied Portfolio Management,,,
+M01,Abstract Algebra,,,
+M02,Algebraic Geometry,,,
+M03,Category Theory,,,
+M04,Coding Theory,,,
+M05,Combinatorics,,,
+M06,Commutative Algebra,,,
+M07,Complex Analysis,,,
+M08,Convex Optimisation,,,
+M09,Differential Geometry,,,
+M10,Differential Topology,,,
+M11,Discrete Mathematics,,,
+M12,Elementary Harmonic analysis,,,
+M13,Functional analysis,,,
+M14,Group Theory,,,
+M15,High Dimensional Probability,,,
+M16,Hopf algebras,,,
+M17,Linear Algebra,,,
+M18,Topological Data Analysis,,,
+M19,Number Theory,,,
+M20,Probabilistic Method,,,
+M21,Probability and Statistics,,,
+M22,Probability theory and Concentration,,,
+M23,Real Analysis,,,
+M24,Regression Analysis,,,
+M25,Representation theory,,,
+M26,Ring Theory,,,
+M27,Set theory,,,
+M28,Stochastic differential equations,,,
+M29,Stochastic Processes,,,
+M30,Topology,,,
+P01,Active Matter Physics,,,
+P02,Analytical Mechanics,,,
+P03,Astroparticle Physics,,,
+P04,Bayesian Inference,,,
+P05,Classical Mechanics,,,
+P06,Computational Physics,,,
+P07,Condensed Matter Physics,,,
+P08,Density Functional Theory,,,
+P09,Device Physics,,,
+P10,Differential Geometry for Physics,,,
+P11,Electrodynamics,,,
+P12,Elementary Particle Physics,,,
+P13,Information and Quantum Technologies,,,
+P14,Mathematical physics,,,
+P15,Neutrino Physics,,,
+P16,Nonlinear Dynamical Systems,,,
+P17,Photonics and Quantum Optics,,,
+P18,Quantum Computing,,,
+P19,Quantum Field Theory,,,
+P20,Quantum Mechanics,,,
+P21,Quantum Probability,,,
+P22,Semi-conductors and their Applications,,,
+P23,Soft Condensed Matter and Complex Fluids,,,
+P24,Solid State Physics,,,
+P25,Special and General Relativity,,,
+P26,Statistical Mechanics and Thermal Physics,,,
+P27,Supersymmetry,,,
+P28,Geometry and Topology in Quantum Matter,,,
+P29,Quantum Hall Effect,,,
+Project Code,Project Title,,,

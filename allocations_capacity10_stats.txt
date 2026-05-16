@@ -1,44 +1,47 @@
 ALLOCATION STATISTICS
 ========================================
-Total mentees: 1438
-Assigned: 1412 (98.2%)
-Unassigned: 26 (1.8%)
+Total mentees: 1452
+Assigned: 1418 (97.7%)
+Unassigned: 34 (2.3%)
 
 Breakdown by preference rank:
-  Preference 1: 1211
-  Preference 2: 125
-  Preference 3: 52
-  Preference 4: 14
-  Preference 5: 10
+  Preference 1: 1208
+  Preference 2: 140
+  Preference 3: 53
+  Preference 4: 11
+  Preference 5: 6
 
 SOP score buckets:
-  Score 10: 1
-  Score 9: 33
-  Score 8: 148
-  Score 7: 255
-  Score 6: 424
-  Score 5: 223
-  Score 4: 326
-  Score 3: 2
+  Score 10: 284
+  Score 9: 210
+  Score 8: 245
+  Score 7: 189
+  Score 6: 141
+  Score 5: 95
+  Score 4: 137
+  Score 3: 57
+  Score 2: 31
+  Score 1: 25
+  Score 0: 4
 
 Top 20 assigned codes:
-  CS13: 71
-  CS20: 64
-  CS03: 56
-  H01: 35
-  H14: 35
-  H31: 35
-  CS01: 34
-  H16: 32
-  P18: 30
-  H12: 29
-  CS25: 27
-  CS26: 25
-  H07: 25
-  H28: 24
-  CS07: 21
-  CS32: 21
+  CS13: 68
+  CS03: 60
+  CS20: 58
+  H14: 46
+  H01: 42
+  CS01: 40
+  H31: 39
+  H16: 34
+  H12: 33
+  P18: 29
+  CS25: 28
+  H07: 26
+  CS26: 24
+  H28: 22
+  CS11: 21
   H04: 20
   M21: 20
-  CS12: 19
-  E10: 19
+  CS32: 20
+  E10: 20
+  CS08: 19

@@ -1,6 +1,5 @@
 import csv
 import argparse
-import os
 import re
 from collections import defaultdict
 
@@ -44,69 +43,20 @@ def parse_seniority_rank(value):
     return 0
 
 
-def score_sop(sop_text):
-    text = (sop_text or '').strip()
-    if not text:
+def parse_sop_score(value):
+    """Parse a pre-computed SOP score from the input CSV (0.0 – 10.0).
+    Returns 0.0 if the value is missing or non-numeric."""
+    try:
+        score = float((value or '').strip())
+        return max(0.0, min(10.0, round(score, 1)))
+    except (ValueError, TypeError):
         return 0.0
 
-    words = re.findall(r"\b\w+\b", text.lower())
-    word_count = len(words)
-    score = 3.5
 
-    if word_count >= 60:
-        score += 1.0
-    if word_count >= 120:
-        score += 0.8
-    if word_count >= 220:
-        score += 0.7
-
-    concrete_terms = [
-        'project', 'research', 'course', 'internship', 'thesis', 'paper',
-        'workshop', 'lab', 'implementation', 'analysis', 'model', 'proof',
-        'coding', 'experiment', 'algorithm', 'reading', 'study'
-    ]
-    evidence_terms = [
-        'because', 'since', 'therefore', 'for example', 'previous', 'experience',
-        'have worked', 'done', 'learned', 'want to', 'hope to', 'aim to'
-    ]
-    goal_terms = [
-        'understand', 'learn', 'explore', 'deepen', 'improve', 'gain', 'build',
-        'develop', 'strengthen', 'contribute', 'grow'
-    ]
-
-    lower = text.lower()
-    score += min(1.0, sum(1 for term in concrete_terms if term in lower) * 0.15)
-    score += min(1.0, sum(1 for term in evidence_terms if term in lower) * 0.2)
-    score += min(1.0, sum(1 for term in goal_terms if term in lower) * 0.15)
-
-    if any(ch.isdigit() for ch in text):
-        score += 0.4
-    if len(set(words)) >= max(20, word_count // 2):
-        score += 0.4
-    if 'want this one only' in lower or 'pls dedo' in lower or lower.strip() == 'please':
-        score -= 0.6
-
-    return max(0.0, min(10.0, round(score, 1)))
-
-
-def load_mentee_years(file_path):
-    year_map = {}
-    with open(file_path, newline='', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        header_map = {normalize_header(name): name for name in (reader.fieldnames or [])}
-        for row in reader:
-            roll = get_row_value(row, header_map, ['Roll Number']).strip()
-            name = get_row_value(row, header_map, ['Full Name']).strip()
-            year_text = get_row_value(row, header_map, ['Year of study', 'Year']).strip()
-            if roll and year_text:
-                year_map[normalize_text(roll)] = year_text
-            if name and year_text:
-                year_map[normalize_text(name)] = year_text
-    return year_map
-
-def load_mentee_preferences(file_path, fallback_year_path='mentee.csv'):
-    """Load long-form mentee responses and group preferences by mentee."""
-    year_map = load_mentee_years(fallback_year_path) if fallback_year_path and os.path.exists(fallback_year_path) else {}
+def load_mentee_preferences(file_path):
+    """Load long-form mentee responses and group preferences by mentee.
+    Year-of-study is read directly from the 'Year' column in file_path.
+    No secondary mentee.csv file is required."""
     grouped = {}
     order = []
     with open(file_path, newline='', encoding='utf-8') as f:
@@ -117,7 +67,7 @@ def load_mentee_preferences(file_path, fallback_year_path='mentee.csv'):
             name = get_row_value(row, header_map, ['Mentee Name', 'Full Name']).strip()
             pref_num_text = get_row_value(row, header_map, ['Preference Number']).strip()
             code = get_row_value(row, header_map, ['Specific Category', 'Project ID', 'Assigned Code']).strip()
-            sop_text = get_row_value(row, header_map, ['SOP']).strip()
+            sop_score_text = get_row_value(row, header_map, ['SOP Score']).strip()
             year_text = get_row_value(row, header_map, ['Year']).strip()
 
             try:
@@ -132,23 +82,22 @@ def load_mentee_preferences(file_path, fallback_year_path='mentee.csv'):
                     'full_name': name,
                     'year_text': '',
                     'preferences': {},
-                    'sop_text': sop_text,
+                    'sop_score_text': sop_score_text,
                 }
                 order.append(key)
 
             entry = grouped[key]
             if code:
                 entry['preferences'][pref_num] = code
-            if sop_text and not entry['sop_text']:
-                entry['sop_text'] = sop_text
+            if sop_score_text and not entry['sop_score_text']:
+                entry['sop_score_text'] = sop_score_text
             if year_text and year_text.strip().lower() not in {'other', 'na', 'n/a', '-', 'none'} and not entry['year_text']:
                 entry['year_text'] = year_text.strip()
 
     mentees = []
     for key in order:
         entry = grouped[key]
-        fallback_year = year_map.get(normalize_text(entry['roll_number'])) or year_map.get(normalize_text(entry['full_name'])) or ''
-        year_text = entry['year_text'] or fallback_year
+        year_text = entry['year_text']
         prefs = [entry['preferences'].get(i, '').strip() for i in range(1, 6)]
         prefs = [p for p in prefs if p]
         mentees.append({
@@ -157,8 +106,7 @@ def load_mentee_preferences(file_path, fallback_year_path='mentee.csv'):
             'year_text': year_text,
             'seniority_rank': parse_seniority_rank(year_text),
             'preferences': prefs,
-            'sop_text': entry['sop_text'],
-            'sop_score': score_sop(entry['sop_text']),
+            'sop_score': parse_sop_score(entry['sop_score_text']),
             'assigned_code': None,
             'assigned_mentor': None,
             'preference_rank': None,
@@ -454,7 +402,7 @@ def main():
     print("Loading mentee preferences...")
     mentees = load_mentee_preferences('mentee_preferences_detailed.csv')
     print(f"  Loaded {len(mentees)} mentees")
-    print("  Scored SOPs out of 10 using a lightweight rubric model")
+    print("  Read pre-computed SOP scores (0.0–10.0) directly from input CSV")
     
     print("\nLoading mentor expertise areas from mentor.csv (topic codes)...")
     mentors, code_to_mentors, total_capacity = load_mentor_codes('mentor.csv', mentor_meta_path='mentor.csv')
